@@ -5,14 +5,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Hello {
-    private LapTop lapTop;
-    // Setter injection
+    
     @Autowired
-    public void setLapTop(LapTop lapTop){
-        this.lapTop = lapTop;
-    }
+    private ComputerInterFace comp;
+
     public void build(){
         System.out.println("In Build");
-        lapTop.pc();
+        comp.pc();
     }
 }
