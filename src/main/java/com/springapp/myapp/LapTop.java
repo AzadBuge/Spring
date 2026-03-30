@@ -5,6 +5,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class LapTop implements ComputerInterFace{
     public void pc(){
-        System.out.println("/LapTop/pc..");
+        System.out.println("LapTop");
     }
 }
