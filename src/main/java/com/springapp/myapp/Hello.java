@@ -5,9 +5,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Hello {
-
-    @Autowired // connects the component Hello and LapTop
-    private LapTop lapTop ; // Field Injection
+    private LapTop lapTop;
+    // Constructor injection no need of autowired optional
+    public Hello(LapTop lapTop){
+        this.lapTop = lapTop;
+    }
     public void build(){
         System.out.println("In Build");
         lapTop.pc();
