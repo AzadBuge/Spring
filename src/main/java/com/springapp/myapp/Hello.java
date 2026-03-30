@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public class Hello {
 
     @Autowired // connects the component Hello and LapTop
-    private LapTop lapTop ;
+    private LapTop lapTop ; // Field Injection
     public void build(){
         System.out.println("In Build");
         lapTop.pc();
