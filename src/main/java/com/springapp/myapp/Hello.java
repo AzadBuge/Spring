@@ -6,8 +6,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class Hello {
     private LapTop lapTop;
-    // Constructor injection no need of autowired optional
-    public Hello(LapTop lapTop){
+    // Setter injection
+    @Autowired
+    public void setLapTop(LapTop lapTop){
         this.lapTop = lapTop;
     }
     public void build(){
